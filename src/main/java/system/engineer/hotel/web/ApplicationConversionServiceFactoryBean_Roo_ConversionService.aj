@@ -6,6 +6,7 @@ package system.engineer.hotel.web;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.format.FormatterRegistry;
+import system.engineer.hotel.domain.AccointWifi;
 import system.engineer.hotel.domain.ChangRoom;
 import system.engineer.hotel.domain.Customer;
 import system.engineer.hotel.domain.Room;
@@ -14,6 +15,30 @@ import system.engineer.hotel.web.ApplicationConversionServiceFactoryBean;
 privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService {
     
     declare @type: ApplicationConversionServiceFactoryBean: @Configurable;
+    
+    public Converter<AccointWifi, String> ApplicationConversionServiceFactoryBean.getAccointWifiToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<system.engineer.hotel.domain.AccointWifi, java.lang.String>() {
+            public String convert(AccointWifi accointWifi) {
+                return new StringBuilder().append(accointWifi.getUsername()).append(' ').append(accointWifi.getPassword()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, AccointWifi> ApplicationConversionServiceFactoryBean.getIdToAccointWifiConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, system.engineer.hotel.domain.AccointWifi>() {
+            public system.engineer.hotel.domain.AccointWifi convert(java.lang.Long id) {
+                return AccointWifi.findAccointWifi(id);
+            }
+        };
+    }
+    
+    public Converter<String, AccointWifi> ApplicationConversionServiceFactoryBean.getStringToAccointWifiConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, system.engineer.hotel.domain.AccointWifi>() {
+            public system.engineer.hotel.domain.AccointWifi convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), AccointWifi.class);
+            }
+        };
+    }
     
     public Converter<ChangRoom, String> ApplicationConversionServiceFactoryBean.getChangRoomToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<system.engineer.hotel.domain.ChangRoom, java.lang.String>() {
@@ -88,6 +113,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     }
     
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
+        registry.addConverter(getAccointWifiToStringConverter());
+        registry.addConverter(getIdToAccointWifiConverter());
+        registry.addConverter(getStringToAccointWifiConverter());
         registry.addConverter(getChangRoomToStringConverter());
         registry.addConverter(getIdToChangRoomConverter());
         registry.addConverter(getStringToChangRoomConverter());

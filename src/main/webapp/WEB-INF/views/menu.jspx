@@ -16,5 +16,10 @@
             <menu:item id="i_customer_new" messageCode="global_menu_new" url="/customers?form" z="d9+YIotZHp6KZLGKwwnMVzPvh8k="/>
             <menu:item id="i_customer_list" messageCode="global_menu_list" url="/customers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Yo9cUtyc7EUvbxwQ7EoeqXWaVJM="/>
         </menu:category>
+        <menu:category id="c_accointwifi" z="gX3DmUuVBFG57nLERL+b7HzlF4I=">
+            <menu:item id="i_accointwifi_new" messageCode="global_menu_new" url="/accointwifis?form" z="emNONo/ZS/QemhsM1XUChqoWXGo="/>
+            <menu:item id="i_accointwifi_list" messageCode="global_menu_list" url="/accointwifis?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7XsHnyN5rR7UY/A6qj7rT6eoUwg="/>
+            <menu:item id="fi_accointwifi_customer" messageCode="global_menu_find" url="/accointwifis?find=ByCustomer&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="G6mGbHuormiQNaiRszQ9fGmd0ys="/>
+        </menu:category>
     </menu:menu>
 </div>
