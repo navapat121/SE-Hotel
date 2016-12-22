@@ -23,3 +23,23 @@ web mvc all --package ~.web
 web mvc finder all
 exit
 // Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-12-22 20:11:25
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-12-22 20:19:01
+exit
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-12-22 20:19:10
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-12-22 20:19:35
+entity jpa --class ~.domain.AccointWifi
+field string --fieldName username --notNull --sizeMin 2
+field string --fieldName password --notNull --sizeMin 2
+field reference --fieldName Customer --type ~.domain.Customer
+web mvc all --package system.engineer.hotel.web
+exit
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-12-22 20:21:42
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-12-22 20:22:32
+focus --class ~.domain.AccointWifi
+finder list
+finder add --finderName findAccountWifiByCustomer
+finder add --finderName findAccointWifisByCustomer
+web mvc all --package system.engineer.hotel.web
+web mvc finder all
+exit
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-12-22 20:24:05

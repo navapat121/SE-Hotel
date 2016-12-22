@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="accointwifis/list">
+        <put-attribute name="body" value="/WEB-INF/views/accointwifis/list.jspx"/>
+    </definition>
+<definition extends="default" name="accointwifis/show">
+        <put-attribute name="body" value="/WEB-INF/views/accointwifis/show.jspx"/>
+    </definition>
+<definition extends="default" name="accointwifis/create">
+        <put-attribute name="body" value="/WEB-INF/views/accointwifis/create.jspx"/>
+    </definition>
+<definition extends="default" name="accointwifis/update">
+        <put-attribute name="body" value="/WEB-INF/views/accointwifis/update.jspx"/>
+    </definition>
+<definition extends="default" name="accointwifis/findAccointWifisByCustomer">
+        <put-attribute name="body" value="/WEB-INF/views/accointwifis/findAccointWifisByCustomer.jspx"/>
+    </definition>
+</tiles-definitions>

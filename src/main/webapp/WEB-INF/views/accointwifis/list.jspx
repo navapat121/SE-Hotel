@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_system_engineer_hotel_domain_AccointWifi" items="${accointwifis}" z="NSF/ll002CQMiOF/pr7+HvHoXmo=">
+        <table:table data="${accointwifis}" id="l_system_engineer_hotel_domain_AccointWifi" path="/accointwifis" z="Z7ew4ayr8MaZeSfYYejz7c7ORhM=">
+            <table:column id="c_system_engineer_hotel_domain_AccointWifi_username" property="username" z="joK7of+bnyHlO0xu1X2h3JVb88o="/>
+            <table:column id="c_system_engineer_hotel_domain_AccointWifi_password" property="password" z="ef/b7ZbTnyIvStH0PdDaWSNCL6M="/>
+            <table:column id="c_system_engineer_hotel_domain_AccointWifi_Customer" property="customer" z="WBu4NbS922rIjCtz4bSgIoQDyGc="/>
+        </table:table>
+    </page:list>
+</div>
