@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_system_engineer_hotel_domain_Roomrepair" items="${roomrepairs}" z="F3Whihn4yVBS0z/2ClQn/p2LNfY=">
+        <table:table data="${roomrepairs}" id="l_system_engineer_hotel_domain_Roomrepair" path="/roomrepairs" z="w/xRCvbrA65ECLQ0L1bDrGixYdU=">
+            <table:column id="c_system_engineer_hotel_domain_Roomrepair_staffname" property="staffname" z="n4bk5LF2+59WxUVvTzODYMIOVZo="/>
+            <table:column id="c_system_engineer_hotel_domain_Roomrepair_room" property="room" z="R6AmNc+IbUDz40bFbI6Uq10sngE="/>
+            <table:column id="c_system_engineer_hotel_domain_Roomrepair_device" property="device" z="mYih56vV0KNS+56yXnUhl9GBil0="/>
+            <table:column id="c_system_engineer_hotel_domain_Roomrepair_outofservice" property="outofservice" z="cF9EYetEQcb/Be1siyKwn2WsLSM="/>
+            <table:column date="true" dateTimePattern="${roomrepair_dates_date_format}" id="c_system_engineer_hotel_domain_Roomrepair_dates" property="dates" z="SHU0QAatvDXXPI4cWy3FgNQa/uE="/>
+            <table:column id="c_system_engineer_hotel_domain_Roomrepair_times" property="times" z="ZE/VCXMPGQkVmC5fZTU652vnw6k="/>
+        </table:table>
+    </page:list>
+</div>

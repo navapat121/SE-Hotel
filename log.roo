@@ -61,3 +61,25 @@ web mvc all --package ~.web
 web mvc finder all
 exit 
 // Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-12-22 20:38:35
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2559-12-22 20:58:39
+ entity jpa --class ~.domain.Hotelstaff
+field string --fieldName staffid --notNull --sizeMin 2
+field string --fieldName staffname --notNull --sizeMin 2
+enum type --class ~.domain.Device
+enum constant --name tv
+enum constant --name elecfan
+enum constant --name airconditioner
+enum constant --name light
+enum constant --name wardrobe
+enum constant --name refrigerator
+enum constant --name Bed
+entity jpa --class ~.domain.Roomrepair
+field reference --fieldName staffname --type ~.domain.Hotelstaff
+field reference --fieldName room --type ~.domain.Room
+field enum --fieldName device --type ~.domain.Device
+field string --fieldName outofservice --notNull --sizeMin 2
+field date --fieldName dates --type java.util.Date
+field string --fieldName times --sizeMax 5
+web mvc all --package ~.web
+quit
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2559-12-22 21:03:22
