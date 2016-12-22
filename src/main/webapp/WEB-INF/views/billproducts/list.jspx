@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_system_engineer_hotel_domain_BillProduct" items="${billproducts}" z="Ds8TNPWkk2Qw69hm/igTNPtGv5c=">
+        <table:table data="${billproducts}" id="l_system_engineer_hotel_domain_BillProduct" path="/billproducts" z="Rk4x55GzoyanXe4JOA9i3FQ8pTc=">
+            <table:column id="c_system_engineer_hotel_domain_BillProduct_product" property="product" z="7XkP7WeayA7IOjuFsXIOm5mrkmM="/>
+            <table:column id="c_system_engineer_hotel_domain_BillProduct_staffhotel" property="staffhotel" z="bCOUx8mxzLGvzpdICDFCdupgZGg="/>
+            <table:column id="c_system_engineer_hotel_domain_BillProduct_status" property="status" z="H5XpufPmkRzq0FN+labCkDgxRPM="/>
+            <table:column date="true" dateTimePattern="${billProduct_dateofcheck_date_format}" id="c_system_engineer_hotel_domain_BillProduct_dateofcheck" property="dateofcheck" z="VjCY5EkVEVCIURqPNMYRjihX4Ks="/>
+        </table:table>
+    </page:list>
+</div>

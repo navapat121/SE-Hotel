@@ -95,3 +95,20 @@ field enum --fieldName paytype --type ~.domain.paytype
 web mvc all --package ~.web
 exit
 // Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2559-12-22 21:28:22
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-12-22 21:41:45
+entity jpa --class ~.domain.Product
+field string --fieldName productid --notNull
+field number --fieldName productprice --type java.lang.Float
+enum type --class ~.domain.Status
+enum constant --name available
+enum constant --name unavailable
+entity jpa --class ~.domain.BillProduct
+field reference --fieldName product --type ~.domain.Product
+field reference --fieldName staffhotel --type ~.domain.Hotelstaff
+field enum --fieldName status --type ~.domain.Status
+field date --fieldName dateofcheck --type java.util.Date
+ finder add --finderName findBillProductsByStaffhotel
+web mvc all --package ~.web
+web mvc finder all
+exit
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-12-22 21:46:16

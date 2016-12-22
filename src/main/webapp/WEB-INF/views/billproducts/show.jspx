@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_system_engineer_hotel_domain_BillProduct" object="${billproduct}" path="/billproducts" z="xZn0ddWdW+x/Hw1oeDfdMc57wyo=">
+        <field:display field="product" id="s_system_engineer_hotel_domain_BillProduct_product" object="${billproduct}" z="/3yH3pmx4il4QakrXZy9rn8p+R0="/>
+        <field:display field="staffhotel" id="s_system_engineer_hotel_domain_BillProduct_staffhotel" object="${billproduct}" z="jCWMbkS5bvSncsEP2l8mGY4Mlsc="/>
+        <field:display field="status" id="s_system_engineer_hotel_domain_BillProduct_status" object="${billproduct}" z="MpXe7UiuwsIubVTq3QvvGKD635Y="/>
+        <field:display date="true" dateTimePattern="${billProduct_dateofcheck_date_format}" field="dateofcheck" id="s_system_engineer_hotel_domain_BillProduct_dateofcheck" object="${billproduct}" z="6xAFgIXJ1oczVroNUD7Qhj1Iufk="/>
+    </page:show>
+</div>
