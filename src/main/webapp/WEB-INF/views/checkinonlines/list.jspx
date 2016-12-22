@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_system_engineer_hotel_domain_Checkinonline" items="${checkinonlines}" z="1eV0C0UWtAHhKb0wdTl48eLQ2YY=">
+        <table:table data="${checkinonlines}" id="l_system_engineer_hotel_domain_Checkinonline" path="/checkinonlines" z="3P8CaUi7Fph/DMLEnwkZOtMZzSw=">
+            <table:column id="c_system_engineer_hotel_domain_Checkinonline_name" property="name" z="EoXbNPPQjzQEhUzzg0k/ySxXJNM="/>
+            <table:column id="c_system_engineer_hotel_domain_Checkinonline_room" property="room" z="QtUI/OANhu0eT1TrgprX5YGml9o="/>
+            <table:column id="c_system_engineer_hotel_domain_Checkinonline_paytype" property="paytype" z="wrCWmrQE3fodGMjHN7o9Ce/nL9o="/>
+        </table:table>
+    </page:list>
+</div>

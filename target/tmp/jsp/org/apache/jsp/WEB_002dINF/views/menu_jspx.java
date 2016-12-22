@@ -550,6 +550,53 @@ public final class menu_jspx extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
+  private boolean _jspx_meth_menu_category_9(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:category
+    org.apache.jsp.tag.web.menu.category_tagx _jspx_th_menu_category_9 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.category_tagx.class) : new org.apache.jsp.tag.web.menu.category_tagx();
+    _jspx_th_menu_category_9.setJspContext(_jspx_page_context);
+    _jspx_th_menu_category_9.setParent(_jspx_parent);
+    _jspx_th_menu_category_9.setZ("rrBUeQxNd6NUA5uqb9Ty3w7OlC8=");
+    _jspx_th_menu_category_9.setId("c_checkinonline");
+    _jspx_th_menu_category_9.setJspBody(new menu_jspxHelper( 10, _jspx_page_context, _jspx_th_menu_category_9, null));
+    _jspx_th_menu_category_9.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_item_21(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_21 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_21.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_21.setParent(_jspx_parent);
+    _jspx_th_menu_item_21.setZ("1qzQAgitf6pk5pDluhIL2Mi9D2g=");
+    _jspx_th_menu_item_21.setUrl("/checkinonlines?form");
+    _jspx_th_menu_item_21.setMessageCode("global_menu_new");
+    _jspx_th_menu_item_21.setId("i_checkinonline_new");
+    _jspx_th_menu_item_21.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_item_22(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_22 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_22.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_22.setParent(_jspx_parent);
+    _jspx_th_menu_item_22.setZ("CATsmHa03fnRIEPrGWk836TnVho=");
+    _jspx_th_menu_item_22.setUrl((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("/checkinonlines?page=1&size=${empty param.size ? 10 : param.size}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_menu_item_22.setMessageCode("global_menu_list");
+    _jspx_th_menu_item_22.setId("i_checkinonline_list");
+    _jspx_th_menu_item_22.doTag();
+    return false;
+  }
+
   private class menu_jspxHelper
       extends org.apache.jasper.runtime.JspFragmentHelper
   {
@@ -581,6 +628,8 @@ public final class menu_jspx extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_menu_category_7((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
         return true;
       if (_jspx_meth_menu_category_8((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      if (_jspx_meth_menu_category_9((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
         return true;
       return false;
     }
@@ -671,6 +720,15 @@ public final class menu_jspx extends org.apache.jasper.runtime.HttpJspBase
         return true;
       return false;
     }
+    public boolean invoke10( JspWriter out ) 
+      throws Throwable
+    {
+      if (_jspx_meth_menu_item_21((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      if (_jspx_meth_menu_item_22((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      return false;
+    }
     public void invoke( java.io.Writer writer )
       throws JspException
     {
@@ -711,6 +769,9 @@ public final class menu_jspx extends org.apache.jasper.runtime.HttpJspBase
             break;
           case 9:
             invoke9( out );
+            break;
+          case 10:
+            invoke10( out );
             break;
         }
       }
