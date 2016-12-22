@@ -46,5 +46,14 @@
             <menu:item id="i_checkinonline_new" messageCode="global_menu_new" url="/checkinonlines?form" z="1qzQAgitf6pk5pDluhIL2Mi9D2g="/>
             <menu:item id="i_checkinonline_list" messageCode="global_menu_list" url="/checkinonlines?page=1&amp;size=${empty param.size ? 10 : param.size}" z="CATsmHa03fnRIEPrGWk836TnVho="/>
         </menu:category>
+        <menu:category id="c_product" z="vJ6efqiSxFssuvqFTsXpvZ3AvA8=">
+            <menu:item id="i_product_new" messageCode="global_menu_new" url="/products?form" z="Ezf8cTW61d2RkMNEcYkDJpG01kc="/>
+            <menu:item id="i_product_list" messageCode="global_menu_list" url="/products?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kEeyCmUUYXShbDEWwOLheaAkM50="/>
+        </menu:category>
+        <menu:category id="c_billproduct" z="PhRKKbJj3zsS/jFxzX5PxjK6RWo=">
+            <menu:item id="i_billproduct_new" messageCode="global_menu_new" url="/billproducts?form" z="O98HQJyocfXfwzNHaR0Nc8D5Qic="/>
+            <menu:item id="i_billproduct_list" messageCode="global_menu_list" url="/billproducts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="lEYdSj5xuL4FKURchXvFqx7sNsA="/>
+            <menu:item id="fi_billproduct_staffhotel" messageCode="global_menu_find" url="/billproducts?find=ByStaffhotel&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="F8unmduQf1VtbYsBfa5dH591Ixc="/>
+        </menu:category>
     </menu:menu>
 </div>
