@@ -8,6 +8,7 @@ import org.springframework.core.convert.converter.Converter;
 import org.springframework.format.FormatterRegistry;
 import system.engineer.hotel.domain.AccointWifi;
 import system.engineer.hotel.domain.ChangRoom;
+import system.engineer.hotel.domain.Checkinonline;
 import system.engineer.hotel.domain.Customer;
 import system.engineer.hotel.domain.Food;
 import system.engineer.hotel.domain.Hotelstaff;
@@ -65,6 +66,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         return new org.springframework.core.convert.converter.Converter<java.lang.String, system.engineer.hotel.domain.ChangRoom>() {
             public system.engineer.hotel.domain.ChangRoom convert(String id) {
                 return getObject().convert(getObject().convert(id, Long.class), ChangRoom.class);
+            }
+        };
+    }
+    
+    public Converter<Checkinonline, String> ApplicationConversionServiceFactoryBean.getCheckinonlineToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<system.engineer.hotel.domain.Checkinonline, java.lang.String>() {
+            public String convert(Checkinonline checkinonline) {
+                return new StringBuilder().append(checkinonline.getName()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Checkinonline> ApplicationConversionServiceFactoryBean.getIdToCheckinonlineConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, system.engineer.hotel.domain.Checkinonline>() {
+            public system.engineer.hotel.domain.Checkinonline convert(java.lang.Long id) {
+                return Checkinonline.findCheckinonline(id);
+            }
+        };
+    }
+    
+    public Converter<String, Checkinonline> ApplicationConversionServiceFactoryBean.getStringToCheckinonlineConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, system.engineer.hotel.domain.Checkinonline>() {
+            public system.engineer.hotel.domain.Checkinonline convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Checkinonline.class);
             }
         };
     }
@@ -244,6 +269,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getChangRoomToStringConverter());
         registry.addConverter(getIdToChangRoomConverter());
         registry.addConverter(getStringToChangRoomConverter());
+        registry.addConverter(getCheckinonlineToStringConverter());
+        registry.addConverter(getIdToCheckinonlineConverter());
+        registry.addConverter(getStringToCheckinonlineConverter());
         registry.addConverter(getCustomerToStringConverter());
         registry.addConverter(getIdToCustomerConverter());
         registry.addConverter(getStringToCustomerConverter());

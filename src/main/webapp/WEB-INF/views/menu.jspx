@@ -42,5 +42,9 @@
             <menu:item id="i_hotelstaff_new" messageCode="global_menu_new" url="/hotelstaffs?form" z="J1Q7bLo1zD368PWP5pP8Zr9vBpI="/>
             <menu:item id="i_hotelstaff_list" messageCode="global_menu_list" url="/hotelstaffs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="lPvJqVu9RsY5tDx62Nf8HGqbT4o="/>
         </menu:category>
+        <menu:category id="c_checkinonline" z="rrBUeQxNd6NUA5uqb9Ty3w7OlC8=">
+            <menu:item id="i_checkinonline_new" messageCode="global_menu_new" url="/checkinonlines?form" z="1qzQAgitf6pk5pDluhIL2Mi9D2g="/>
+            <menu:item id="i_checkinonline_list" messageCode="global_menu_list" url="/checkinonlines?page=1&amp;size=${empty param.size ? 10 : param.size}" z="CATsmHa03fnRIEPrGWk836TnVho="/>
+        </menu:category>
     </menu:menu>
 </div>
