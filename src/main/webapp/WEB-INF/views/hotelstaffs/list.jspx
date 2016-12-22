@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_system_engineer_hotel_domain_Hotelstaff" items="${hotelstaffs}" z="jlkQKM/zWbo/5U+eHRla5TrHJdg=">
+        <table:table data="${hotelstaffs}" id="l_system_engineer_hotel_domain_Hotelstaff" path="/hotelstaffs" z="3PEEd0F0pZN7RB0UrFT8d2Jrpv8=">
+            <table:column id="c_system_engineer_hotel_domain_Hotelstaff_staffid" property="staffid" z="7XJrHkB5Yoa6KpoVzjsZe2pudzE="/>
+            <table:column id="c_system_engineer_hotel_domain_Hotelstaff_staffname" property="staffname" z="5O0Trp6SYy2th9+tKetuOxgYlAU="/>
+        </table:table>
+    </page:list>
+</div>

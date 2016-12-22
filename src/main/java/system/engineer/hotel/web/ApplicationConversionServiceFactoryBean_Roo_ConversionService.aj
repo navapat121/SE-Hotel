@@ -10,9 +10,11 @@ import system.engineer.hotel.domain.AccointWifi;
 import system.engineer.hotel.domain.ChangRoom;
 import system.engineer.hotel.domain.Customer;
 import system.engineer.hotel.domain.Food;
+import system.engineer.hotel.domain.Hotelstaff;
 import system.engineer.hotel.domain.Kitchenstaff;
 import system.engineer.hotel.domain.Refillfood;
 import system.engineer.hotel.domain.Room;
+import system.engineer.hotel.domain.Roomrepair;
 import system.engineer.hotel.web.ApplicationConversionServiceFactoryBean;
 
 privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService {
@@ -115,6 +117,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<Hotelstaff, String> ApplicationConversionServiceFactoryBean.getHotelstaffToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<system.engineer.hotel.domain.Hotelstaff, java.lang.String>() {
+            public String convert(Hotelstaff hotelstaff) {
+                return new StringBuilder().append(hotelstaff.getStaffid()).append(' ').append(hotelstaff.getStaffname()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Hotelstaff> ApplicationConversionServiceFactoryBean.getIdToHotelstaffConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, system.engineer.hotel.domain.Hotelstaff>() {
+            public system.engineer.hotel.domain.Hotelstaff convert(java.lang.Long id) {
+                return Hotelstaff.findHotelstaff(id);
+            }
+        };
+    }
+    
+    public Converter<String, Hotelstaff> ApplicationConversionServiceFactoryBean.getStringToHotelstaffConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, system.engineer.hotel.domain.Hotelstaff>() {
+            public system.engineer.hotel.domain.Hotelstaff convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Hotelstaff.class);
+            }
+        };
+    }
+    
     public Converter<Kitchenstaff, String> ApplicationConversionServiceFactoryBean.getKitchenstaffToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<system.engineer.hotel.domain.Kitchenstaff, java.lang.String>() {
             public String convert(Kitchenstaff kitchenstaff) {
@@ -187,6 +213,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<Roomrepair, String> ApplicationConversionServiceFactoryBean.getRoomrepairToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<system.engineer.hotel.domain.Roomrepair, java.lang.String>() {
+            public String convert(Roomrepair roomrepair) {
+                return new StringBuilder().append(roomrepair.getOutofservice()).append(' ').append(roomrepair.getDates()).append(' ').append(roomrepair.getTimes()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Roomrepair> ApplicationConversionServiceFactoryBean.getIdToRoomrepairConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, system.engineer.hotel.domain.Roomrepair>() {
+            public system.engineer.hotel.domain.Roomrepair convert(java.lang.Long id) {
+                return Roomrepair.findRoomrepair(id);
+            }
+        };
+    }
+    
+    public Converter<String, Roomrepair> ApplicationConversionServiceFactoryBean.getStringToRoomrepairConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, system.engineer.hotel.domain.Roomrepair>() {
+            public system.engineer.hotel.domain.Roomrepair convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Roomrepair.class);
+            }
+        };
+    }
+    
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
         registry.addConverter(getAccointWifiToStringConverter());
         registry.addConverter(getIdToAccointWifiConverter());
@@ -200,6 +250,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getFoodToStringConverter());
         registry.addConverter(getIdToFoodConverter());
         registry.addConverter(getStringToFoodConverter());
+        registry.addConverter(getHotelstaffToStringConverter());
+        registry.addConverter(getIdToHotelstaffConverter());
+        registry.addConverter(getStringToHotelstaffConverter());
         registry.addConverter(getKitchenstaffToStringConverter());
         registry.addConverter(getIdToKitchenstaffConverter());
         registry.addConverter(getStringToKitchenstaffConverter());
@@ -209,6 +262,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getRoomToStringConverter());
         registry.addConverter(getIdToRoomConverter());
         registry.addConverter(getStringToRoomConverter());
+        registry.addConverter(getRoomrepairToStringConverter());
+        registry.addConverter(getIdToRoomrepairConverter());
+        registry.addConverter(getStringToRoomrepairConverter());
     }
     
     public void ApplicationConversionServiceFactoryBean.afterPropertiesSet() {

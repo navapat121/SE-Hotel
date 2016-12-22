@@ -34,5 +34,13 @@
             <menu:item id="i_food_new" messageCode="global_menu_new" url="/foods?form" z="k4OJIwluP52PLhY6M0og4jGS7qA="/>
             <menu:item id="i_food_list" messageCode="global_menu_list" url="/foods?page=1&amp;size=${empty param.size ? 10 : param.size}" z="aD5S4FS7txlMbkru21BULvWF92M="/>
         </menu:category>
+        <menu:category id="c_roomrepair" z="vhPyS/6LBvLkZsDaMtAfgNUm8PE=">
+            <menu:item id="i_roomrepair_new" messageCode="global_menu_new" url="/roomrepairs?form" z="LzqW/U2dJwIdyU4WeKfG7UvEUIk="/>
+            <menu:item id="i_roomrepair_list" messageCode="global_menu_list" url="/roomrepairs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Gt3dn+opCx0c9nbuVbsD8su8WpM="/>
+        </menu:category>
+        <menu:category id="c_hotelstaff" z="fWSysqXOAd+Tp+wwSMShxQbHx4k=">
+            <menu:item id="i_hotelstaff_new" messageCode="global_menu_new" url="/hotelstaffs?form" z="J1Q7bLo1zD368PWP5pP8Zr9vBpI="/>
+            <menu:item id="i_hotelstaff_list" messageCode="global_menu_list" url="/hotelstaffs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="lPvJqVu9RsY5tDx62Nf8HGqbT4o="/>
+        </menu:category>
     </menu:menu>
 </div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_system_engineer_hotel_domain_Hotelstaff" modelAttribute="hotelstaff" path="/hotelstaffs" render="${empty dependencies}" z="wZUdReixMFftfrmAsqBJYdT6RL8=">
+        <field:input field="staffid" id="c_system_engineer_hotel_domain_Hotelstaff_staffid" min="2" required="true" z="VmAOhDGEGRDUU72Lvwv0jCQbLO0="/>
+        <field:input field="staffname" id="c_system_engineer_hotel_domain_Hotelstaff_staffname" min="2" required="true" z="LcyKVTIA8LCnsH2gXccOGygA82M="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_system_engineer_hotel_domain_Hotelstaff" render="${not empty dependencies}" z="w3CebJT103/D6FL09vurYkVK1Xg="/>
+</div>
