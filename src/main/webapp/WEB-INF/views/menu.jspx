@@ -21,5 +21,18 @@
             <menu:item id="i_accointwifi_list" messageCode="global_menu_list" url="/accointwifis?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7XsHnyN5rR7UY/A6qj7rT6eoUwg="/>
             <menu:item id="fi_accointwifi_customer" messageCode="global_menu_find" url="/accointwifis?find=ByCustomer&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="G6mGbHuormiQNaiRszQ9fGmd0ys="/>
         </menu:category>
+        <menu:category id="c_kitchenstaff" z="T6AsWSs8VxvyIcY23FuN0yUQEWc=">
+            <menu:item id="i_kitchenstaff_new" messageCode="global_menu_new" url="/kitchenstaffs?form" z="n/PppB9gX8FRIbcmqfRHUHZ3R8k="/>
+            <menu:item id="i_kitchenstaff_list" messageCode="global_menu_list" url="/kitchenstaffs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="h6gYNx1LiPQYwD9sGPIlZ2Kkm/Y="/>
+        </menu:category>
+        <menu:category id="c_refillfood" z="7084pzfm+MWbpO5htD68nDTKvWQ=">
+            <menu:item id="i_refillfood_new" messageCode="global_menu_new" url="/refillfoods?form" z="EzkWehPJ2gRGaxbKvN1bkeuJ/wo="/>
+            <menu:item id="i_refillfood_list" messageCode="global_menu_list" url="/refillfoods?page=1&amp;size=${empty param.size ? 10 : param.size}" z="r9cl2fxZyLj/HkEsvt0ryyScUHc="/>
+            <menu:item id="fi_refillfood_food" messageCode="global_menu_find" url="/refillfoods?find=ByFood&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="/KBNMYX0wpkpdo/yDehJH3iMZK8="/>
+        </menu:category>
+        <menu:category id="c_food" z="KQDZ7wXZ1Wa73XlJlk4AJW31DlI=">
+            <menu:item id="i_food_new" messageCode="global_menu_new" url="/foods?form" z="k4OJIwluP52PLhY6M0og4jGS7qA="/>
+            <menu:item id="i_food_list" messageCode="global_menu_list" url="/foods?page=1&amp;size=${empty param.size ? 10 : param.size}" z="aD5S4FS7txlMbkru21BULvWF92M="/>
+        </menu:category>
     </menu:menu>
 </div>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByFood" id="ff_system_engineer_hotel_domain_Refillfood" path="/refillfoods" z="d5mw6wmPeZQWM4+HNvnlcHI+sIY=">
+        <field:select disableFormBinding="true" field="food" id="f_system_engineer_hotel_domain_Refillfood_food" itemValue="id" items="${foods}" path="/foods" required="true" z="7F/4sj+/6CXxOoqXdm88JL2NJHE="/>
+    </form:find>
+</div>

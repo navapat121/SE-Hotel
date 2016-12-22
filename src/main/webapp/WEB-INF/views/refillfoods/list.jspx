@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_system_engineer_hotel_domain_Refillfood" items="${refillfoods}" z="qTigE8bMIST2wlQ6hpe9qareocM=">
+        <table:table data="${refillfoods}" id="l_system_engineer_hotel_domain_Refillfood" path="/refillfoods" z="jSV16l4TR6GeccS9vefgQjIK5SI=">
+            <table:column id="c_system_engineer_hotel_domain_Refillfood_food" property="food" z="Df+C87zQP8lYu0ux6/4+E27lWoo="/>
+            <table:column id="c_system_engineer_hotel_domain_Refillfood_refillnumber" property="refillnumber" z="J8X+nsk8v/FC1z62oMlewNpMeRI="/>
+            <table:column date="true" dateTimePattern="${refillfood_refilldate_date_format}" id="c_system_engineer_hotel_domain_Refillfood_refilldate" property="refilldate" z="BchmHmsiELT5Iveb9oPWqpSIjnY="/>
+            <table:column id="c_system_engineer_hotel_domain_Refillfood_kitchenstaffname" property="kitchenstaffname" z="R/fjec3NJevTbKqckrZ0XNgNJck="/>
+        </table:table>
+    </page:list>
+</div>
