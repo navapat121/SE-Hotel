@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_system_engineer_hotel_domain_Room" modelAttribute="room" path="/rooms" versionField="Version" z="W7MqVDCPas2r+cUnxinljAXFK5k=">
+        <field:input field="roomNumber" id="c_system_engineer_hotel_domain_Room_roomNumber" validationMessageCode="field_invalid_integer" z="R3Lg/4DKIcKRAlxIQTYCgF/69sQ="/>
+        <field:input field="roomLevel" id="c_system_engineer_hotel_domain_Room_roomLevel" z="5WEOipuVQMacpJhbNvyHQ1Ys4XE="/>
+    </form:update>
+</div>

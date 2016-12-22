@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_system_engineer_hotel_domain_Customer" items="${customers}" z="GQVS2nZMrIWttszb0tQTyKR2wJI=">
+        <table:table data="${customers}" id="l_system_engineer_hotel_domain_Customer" path="/customers" z="y9icxgtGHr8uFDAv840YxO46b+0=">
+            <table:column id="c_system_engineer_hotel_domain_Customer_customerID" property="customerID" z="bbWg/ELlg8RBssrzLOmJDySF69g="/>
+            <table:column id="c_system_engineer_hotel_domain_Customer_customerName" property="customerName" z="wnaQ8K4SNzRcYRDviHvJ1Z5dcfs="/>
+            <table:column id="c_system_engineer_hotel_domain_Customer_ownRoom" property="ownRoom" z="qD1/kjPyT1G/VGEWOcA8g9XsZw4="/>
+        </table:table>
+    </page:list>
+</div>

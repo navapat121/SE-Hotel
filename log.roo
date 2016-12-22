@@ -1,0 +1,25 @@
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-12-22 20:08:40
+project --topLevelPackage System.Engineer.Hotel
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+entity jpa --class ~.domain.Room
+field number --fieldName roomNumber --type java.lang.Integer
+field string --fieldName roomLevel
+entity jpa --class ~.domain.Customer
+field string --fieldName customerID
+field string --fieldName customerName
+entity jpa --class ~.domain.ChangRoom
+field string --fieldName changNo
+field string --fieldName Reason
+focus --class ~.domain.Customer
+field reference --fieldName ownRoom --type ~.domain.Room
+focus --class ~.domain.ChangRoom
+field reference --fieldName ownRoom --type ~.domain.Customer
+field reference --fieldName changTo --type ~.domain.Room
+finder list
+finder add --finderName findChangRoomsByOwnRoom
+web mvc setup
+web mvc all --package ~.web
+web mvc finder all
+exit
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-12-22 20:11:25

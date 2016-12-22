@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_system_engineer_hotel_domain_Customer" modelAttribute="customer" path="/customers" versionField="Version" z="rG3zdBCNq+aaDwDYnMBX+lvbkNo=">
+        <field:input field="customerID" id="c_system_engineer_hotel_domain_Customer_customerID" z="ZsaF2g7bLaUZvYkjg+4WYJRQShg="/>
+        <field:input field="customerName" id="c_system_engineer_hotel_domain_Customer_customerName" z="9J+Krkly50u502zyQxmohyT85fo="/>
+        <field:select field="ownRoom" id="c_system_engineer_hotel_domain_Customer_ownRoom" itemValue="id" items="${rooms}" path="/rooms" z="t6/g5LeMOkI7FGCPKAAVYlgVFDE="/>
+    </form:update>
+</div>

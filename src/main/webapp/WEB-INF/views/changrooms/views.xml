@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="changrooms/list">
+        <put-attribute name="body" value="/WEB-INF/views/changrooms/list.jspx"/>
+    </definition>
+<definition extends="default" name="changrooms/show">
+        <put-attribute name="body" value="/WEB-INF/views/changrooms/show.jspx"/>
+    </definition>
+<definition extends="default" name="changrooms/create">
+        <put-attribute name="body" value="/WEB-INF/views/changrooms/create.jspx"/>
+    </definition>
+<definition extends="default" name="changrooms/update">
+        <put-attribute name="body" value="/WEB-INF/views/changrooms/update.jspx"/>
+    </definition>
+<definition extends="default" name="changrooms/findChangRoomsByOwnRoom">
+        <put-attribute name="body" value="/WEB-INF/views/changrooms/findChangRoomsByOwnRoom.jspx"/>
+    </definition>
+</tiles-definitions>

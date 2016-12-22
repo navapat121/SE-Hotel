@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_system_engineer_hotel_domain_ChangRoom" object="${changroom}" path="/changrooms" z="fSBSDyEVND4eku9RxgrmoiQYq4Y=">
+        <field:display field="changNo" id="s_system_engineer_hotel_domain_ChangRoom_changNo" object="${changroom}" z="S8U2KJII1sKxynUgzTr2XyaIR54="/>
+        <field:display field="reason" id="s_system_engineer_hotel_domain_ChangRoom_Reason" object="${changroom}" z="MlOWyvFyRn3kTx+mBcu5prEuWlk="/>
+        <field:display field="ownRoom" id="s_system_engineer_hotel_domain_ChangRoom_ownRoom" object="${changroom}" z="CyA3UOlS1T+t/WKB6irA+WfY66M="/>
+        <field:display field="changTo" id="s_system_engineer_hotel_domain_ChangRoom_changTo" object="${changroom}" z="cgKMokPPsI4AY6TCC4Oj1Bqu7cA="/>
+    </page:show>
+</div>
