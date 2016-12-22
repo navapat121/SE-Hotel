@@ -283,6 +283,179 @@ public final class menu_jspx extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
+  private boolean _jspx_meth_menu_item_9(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_9 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_9.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_9.setParent(_jspx_parent);
+    _jspx_th_menu_item_9.setZ("G6mGbHuormiQNaiRszQ9fGmd0ys=");
+    _jspx_th_menu_item_9.setUrl((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("/accointwifis?find=ByCustomer&form&page=1&size=${empty param.size ? 10 : param.size}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_menu_item_9.setMessageCode("global_menu_find");
+    _jspx_th_menu_item_9.setId("fi_accointwifi_customer");
+    _jspx_th_menu_item_9.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_category_4(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:category
+    org.apache.jsp.tag.web.menu.category_tagx _jspx_th_menu_category_4 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.category_tagx.class) : new org.apache.jsp.tag.web.menu.category_tagx();
+    _jspx_th_menu_category_4.setJspContext(_jspx_page_context);
+    _jspx_th_menu_category_4.setParent(_jspx_parent);
+    _jspx_th_menu_category_4.setZ("T6AsWSs8VxvyIcY23FuN0yUQEWc=");
+    _jspx_th_menu_category_4.setId("c_kitchenstaff");
+    _jspx_th_menu_category_4.setJspBody(new menu_jspxHelper( 5, _jspx_page_context, _jspx_th_menu_category_4, null));
+    _jspx_th_menu_category_4.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_item_10(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_10 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_10.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_10.setParent(_jspx_parent);
+    _jspx_th_menu_item_10.setZ("n/PppB9gX8FRIbcmqfRHUHZ3R8k=");
+    _jspx_th_menu_item_10.setUrl("/kitchenstaffs?form");
+    _jspx_th_menu_item_10.setMessageCode("global_menu_new");
+    _jspx_th_menu_item_10.setId("i_kitchenstaff_new");
+    _jspx_th_menu_item_10.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_item_11(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_11 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_11.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_11.setParent(_jspx_parent);
+    _jspx_th_menu_item_11.setZ("h6gYNx1LiPQYwD9sGPIlZ2Kkm/Y=");
+    _jspx_th_menu_item_11.setUrl((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("/kitchenstaffs?page=1&size=${empty param.size ? 10 : param.size}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_menu_item_11.setMessageCode("global_menu_list");
+    _jspx_th_menu_item_11.setId("i_kitchenstaff_list");
+    _jspx_th_menu_item_11.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_category_5(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:category
+    org.apache.jsp.tag.web.menu.category_tagx _jspx_th_menu_category_5 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.category_tagx.class) : new org.apache.jsp.tag.web.menu.category_tagx();
+    _jspx_th_menu_category_5.setJspContext(_jspx_page_context);
+    _jspx_th_menu_category_5.setParent(_jspx_parent);
+    _jspx_th_menu_category_5.setZ("7084pzfm+MWbpO5htD68nDTKvWQ=");
+    _jspx_th_menu_category_5.setId("c_refillfood");
+    _jspx_th_menu_category_5.setJspBody(new menu_jspxHelper( 6, _jspx_page_context, _jspx_th_menu_category_5, null));
+    _jspx_th_menu_category_5.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_item_12(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_12 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_12.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_12.setParent(_jspx_parent);
+    _jspx_th_menu_item_12.setZ("EzkWehPJ2gRGaxbKvN1bkeuJ/wo=");
+    _jspx_th_menu_item_12.setUrl("/refillfoods?form");
+    _jspx_th_menu_item_12.setMessageCode("global_menu_new");
+    _jspx_th_menu_item_12.setId("i_refillfood_new");
+    _jspx_th_menu_item_12.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_item_13(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_13 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_13.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_13.setParent(_jspx_parent);
+    _jspx_th_menu_item_13.setZ("r9cl2fxZyLj/HkEsvt0ryyScUHc=");
+    _jspx_th_menu_item_13.setUrl((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("/refillfoods?page=1&size=${empty param.size ? 10 : param.size}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_menu_item_13.setMessageCode("global_menu_list");
+    _jspx_th_menu_item_13.setId("i_refillfood_list");
+    _jspx_th_menu_item_13.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_item_14(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_14 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_14.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_14.setParent(_jspx_parent);
+    _jspx_th_menu_item_14.setZ("/KBNMYX0wpkpdo/yDehJH3iMZK8=");
+    _jspx_th_menu_item_14.setUrl((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("/refillfoods?find=ByFood&form&page=1&size=${empty param.size ? 10 : param.size}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_menu_item_14.setMessageCode("global_menu_find");
+    _jspx_th_menu_item_14.setId("fi_refillfood_food");
+    _jspx_th_menu_item_14.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_category_6(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:category
+    org.apache.jsp.tag.web.menu.category_tagx _jspx_th_menu_category_6 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.category_tagx.class) : new org.apache.jsp.tag.web.menu.category_tagx();
+    _jspx_th_menu_category_6.setJspContext(_jspx_page_context);
+    _jspx_th_menu_category_6.setParent(_jspx_parent);
+    _jspx_th_menu_category_6.setZ("KQDZ7wXZ1Wa73XlJlk4AJW31DlI=");
+    _jspx_th_menu_category_6.setId("c_food");
+    _jspx_th_menu_category_6.setJspBody(new menu_jspxHelper( 7, _jspx_page_context, _jspx_th_menu_category_6, null));
+    _jspx_th_menu_category_6.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_item_15(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_15 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_15.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_15.setParent(_jspx_parent);
+    _jspx_th_menu_item_15.setZ("k4OJIwluP52PLhY6M0og4jGS7qA=");
+    _jspx_th_menu_item_15.setUrl("/foods?form");
+    _jspx_th_menu_item_15.setMessageCode("global_menu_new");
+    _jspx_th_menu_item_15.setId("i_food_new");
+    _jspx_th_menu_item_15.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_item_16(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_16 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_16.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_16.setParent(_jspx_parent);
+    _jspx_th_menu_item_16.setZ("aD5S4FS7txlMbkru21BULvWF92M=");
+    _jspx_th_menu_item_16.setUrl((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("/foods?page=1&size=${empty param.size ? 10 : param.size}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_menu_item_16.setMessageCode("global_menu_list");
+    _jspx_th_menu_item_16.setId("i_food_list");
+    _jspx_th_menu_item_16.doTag();
+    return false;
+  }
+
   private class menu_jspxHelper
       extends org.apache.jasper.runtime.JspFragmentHelper
   {
@@ -304,6 +477,12 @@ public final class menu_jspx extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_menu_category_2((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
         return true;
       if (_jspx_meth_menu_category_3((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      if (_jspx_meth_menu_category_4((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      if (_jspx_meth_menu_category_5((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      if (_jspx_meth_menu_category_6((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
         return true;
       return false;
     }
@@ -343,6 +522,37 @@ public final class menu_jspx extends org.apache.jasper.runtime.HttpJspBase
         return true;
       if (_jspx_meth_menu_item_8((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
         return true;
+      if (_jspx_meth_menu_item_9((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      return false;
+    }
+    public boolean invoke5( JspWriter out ) 
+      throws Throwable
+    {
+      if (_jspx_meth_menu_item_10((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      if (_jspx_meth_menu_item_11((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      return false;
+    }
+    public boolean invoke6( JspWriter out ) 
+      throws Throwable
+    {
+      if (_jspx_meth_menu_item_12((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      if (_jspx_meth_menu_item_13((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      if (_jspx_meth_menu_item_14((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      return false;
+    }
+    public boolean invoke7( JspWriter out ) 
+      throws Throwable
+    {
+      if (_jspx_meth_menu_item_15((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      if (_jspx_meth_menu_item_16((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
       return false;
     }
     public void invoke( java.io.Writer writer )
@@ -370,6 +580,15 @@ public final class menu_jspx extends org.apache.jasper.runtime.HttpJspBase
             break;
           case 4:
             invoke4( out );
+            break;
+          case 5:
+            invoke5( out );
+            break;
+          case 6:
+            invoke6( out );
+            break;
+          case 7:
+            invoke7( out );
             break;
         }
       }

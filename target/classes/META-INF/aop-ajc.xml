@@ -1,32 +1,54 @@
 <aspectj>
 <aspects>
-<aspect name="system.engineer.hotel.domain.Customer_Roo_Jpa_ActiveRecord"/>
-<aspect name="system.engineer.hotel.domain.Room_Roo_JavaBean"/>
-<aspect name="system.engineer.hotel.domain.Customer_Roo_JavaBean"/>
+<aspect name="system.engineer.hotel.domain.Refillfood_Roo_Jpa_Entity"/>
+<aspect name="system.engineer.hotel.domain.Food_Roo_Jpa_Entity"/>
 <aspect name="system.engineer.hotel.domain.ChangRoom_Roo_Jpa_Entity"/>
-<aspect name="system.engineer.hotel.domain.Customer_Roo_Configurable"/>
+<aspect name="system.engineer.hotel.domain.Kitchenstaff_Roo_JavaBean"/>
 <aspect name="system.engineer.hotel.domain.Room_Roo_Configurable"/>
-<aspect name="system.engineer.hotel.domain.Room_Roo_Jpa_Entity"/>
-<aspect name="system.engineer.hotel.web.AccointWifiController_Roo_Controller"/>
-<aspect name="system.engineer.hotel.web.ChangRoomController_Roo_Controller_Finder"/>
+<aspect name="system.engineer.hotel.web.RefillfoodController_Roo_Controller_Finder"/>
+<aspect name="system.engineer.hotel.domain.AccointWifi_Roo_Finder"/>
+<aspect name="system.engineer.hotel.domain.Food_Roo_Jpa_ActiveRecord"/>
 <aspect name="system.engineer.hotel.domain.Room_Roo_ToString"/>
-<aspect name="system.engineer.hotel.domain.ChangRoom_Roo_ToString"/>
-<aspect name="system.engineer.hotel.domain.AccointWifi_Roo_Jpa_Entity"/>
 <aspect name="system.engineer.hotel.domain.ChangRoom_Roo_JavaBean"/>
 <aspect name="system.engineer.hotel.domain.ChangRoom_Roo_Configurable"/>
 <aspect name="system.engineer.hotel.domain.AccointWifi_Roo_Configurable"/>
-<aspect name="system.engineer.hotel.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
 <aspect name="system.engineer.hotel.domain.ChangRoom_Roo_Finder"/>
-<aspect name="system.engineer.hotel.web.RoomController_Roo_Controller"/>
 <aspect name="system.engineer.hotel.domain.AccointWifi_Roo_Jpa_ActiveRecord"/>
+<aspect name="system.engineer.hotel.domain.Kitchenstaff_Roo_ToString"/>
 <aspect name="system.engineer.hotel.domain.Customer_Roo_ToString"/>
 <aspect name="system.engineer.hotel.web.ChangRoomController_Roo_Controller"/>
-<aspect name="system.engineer.hotel.domain.Customer_Roo_Jpa_Entity"/>
+<aspect name="system.engineer.hotel.domain.Kitchenstaff_Roo_Jpa_Entity"/>
 <aspect name="system.engineer.hotel.web.CustomerController_Roo_Controller"/>
+<aspect name="system.engineer.hotel.domain.Refillfood_Roo_ToString"/>
+<aspect name="system.engineer.hotel.domain.Refillfood_Roo_Configurable"/>
 <aspect name="system.engineer.hotel.domain.Room_Roo_Jpa_ActiveRecord"/>
 <aspect name="system.engineer.hotel.domain.AccointWifi_Roo_JavaBean"/>
+<aspect name="system.engineer.hotel.domain.Food_Roo_JavaBean"/>
+<aspect name="system.engineer.hotel.domain.Customer_Roo_Jpa_ActiveRecord"/>
+<aspect name="system.engineer.hotel.domain.Room_Roo_JavaBean"/>
+<aspect name="system.engineer.hotel.domain.Customer_Roo_JavaBean"/>
+<aspect name="system.engineer.hotel.domain.Refillfood_Roo_JavaBean"/>
+<aspect name="system.engineer.hotel.domain.Customer_Roo_Configurable"/>
+<aspect name="system.engineer.hotel.domain.Room_Roo_Jpa_Entity"/>
+<aspect name="system.engineer.hotel.web.AccointWifiController_Roo_Controller"/>
+<aspect name="system.engineer.hotel.domain.Kitchenstaff_Roo_Configurable"/>
+<aspect name="system.engineer.hotel.web.ChangRoomController_Roo_Controller_Finder"/>
+<aspect name="system.engineer.hotel.domain.ChangRoom_Roo_ToString"/>
+<aspect name="system.engineer.hotel.domain.AccointWifi_Roo_Jpa_Entity"/>
+<aspect name="system.engineer.hotel.domain.Refillfood_Roo_Jpa_ActiveRecord"/>
+<aspect name="system.engineer.hotel.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="system.engineer.hotel.web.KitchenstaffController_Roo_Controller"/>
+<aspect name="system.engineer.hotel.web.RoomController_Roo_Controller"/>
+<aspect name="system.engineer.hotel.domain.Refillfood_Roo_Finder"/>
+<aspect name="system.engineer.hotel.web.FoodController_Roo_Controller"/>
+<aspect name="system.engineer.hotel.domain.Customer_Roo_Jpa_Entity"/>
+<aspect name="system.engineer.hotel.web.AccointWifiController_Roo_Controller_Finder"/>
+<aspect name="system.engineer.hotel.domain.Food_Roo_Configurable"/>
+<aspect name="system.engineer.hotel.domain.Food_Roo_ToString"/>
+<aspect name="system.engineer.hotel.domain.Kitchenstaff_Roo_Jpa_ActiveRecord"/>
 <aspect name="system.engineer.hotel.domain.AccointWifi_Roo_ToString"/>
 <aspect name="system.engineer.hotel.domain.ChangRoom_Roo_Jpa_ActiveRecord"/>
+<aspect name="system.engineer.hotel.web.RefillfoodController_Roo_Controller"/>
 </aspects>
 </aspectj>
 

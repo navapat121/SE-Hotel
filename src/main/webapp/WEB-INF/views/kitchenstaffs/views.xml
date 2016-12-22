@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="kitchenstaffs/list">
+        <put-attribute name="body" value="/WEB-INF/views/kitchenstaffs/list.jspx"/>
+    </definition>
+<definition extends="default" name="kitchenstaffs/show">
+        <put-attribute name="body" value="/WEB-INF/views/kitchenstaffs/show.jspx"/>
+    </definition>
+<definition extends="default" name="kitchenstaffs/create">
+        <put-attribute name="body" value="/WEB-INF/views/kitchenstaffs/create.jspx"/>
+    </definition>
+<definition extends="default" name="kitchenstaffs/update">
+        <put-attribute name="body" value="/WEB-INF/views/kitchenstaffs/update.jspx"/>
+    </definition>
+</tiles-definitions>

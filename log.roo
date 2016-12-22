@@ -43,3 +43,21 @@ web mvc all --package system.engineer.hotel.web
 web mvc finder all
 exit
 // Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-12-22 20:24:05
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-12-22 20:32:15
+entity jpa --class ~.domain.kitchenstaff
+field string --fieldName kitchenstaffname --notNull --sizeMin 2
+field string --fieldName kitchenstaffid --sizeMin 2
+entity jpa --class ~.domain.food 
+field string --fieldName foodname --sizeMin 2
+field string --fieldName amount --sizeMin 1
+entity jpa --class ~.domain.refillfood
+field reference --fieldName food --type ~.domain.food
+field string --fieldName refillnumber --sizeMin 2
+field date --fieldName refilldate --type java.util.Date
+field reference --fieldName kitchenstaffname --type ~.domain.kitchenstaff
+finder list
+finder add --finderName findRefillfoodsByFood
+web mvc all --package ~.web
+web mvc finder all
+exit 
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-12-22 20:38:35

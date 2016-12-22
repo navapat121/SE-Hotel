@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_system_engineer_hotel_domain_Kitchenstaff" modelAttribute="kitchenstaff" path="/kitchenstaffs" versionField="Version" z="Vf3WC4H+L8ONK1UxOpZ99gql4kM=">
+        <field:input field="kitchenstaffname" id="c_system_engineer_hotel_domain_Kitchenstaff_kitchenstaffname" min="2" required="true" z="c5Y8LzI8/WgG3Vuho4C0VHyB00Q="/>
+        <field:input field="kitchenstaffid" id="c_system_engineer_hotel_domain_Kitchenstaff_kitchenstaffid" min="2" required="true" z="HdGQYkmFqvIyFuo/lSQbHqrGBuI="/>
+    </form:update>
+</div>

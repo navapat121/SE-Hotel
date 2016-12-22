@@ -9,6 +9,9 @@ import org.springframework.format.FormatterRegistry;
 import system.engineer.hotel.domain.AccointWifi;
 import system.engineer.hotel.domain.ChangRoom;
 import system.engineer.hotel.domain.Customer;
+import system.engineer.hotel.domain.Food;
+import system.engineer.hotel.domain.Kitchenstaff;
+import system.engineer.hotel.domain.Refillfood;
 import system.engineer.hotel.domain.Room;
 import system.engineer.hotel.web.ApplicationConversionServiceFactoryBean;
 
@@ -88,6 +91,78 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<Food, String> ApplicationConversionServiceFactoryBean.getFoodToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<system.engineer.hotel.domain.Food, java.lang.String>() {
+            public String convert(Food food) {
+                return new StringBuilder().append(food.getFoodname()).append(' ').append(food.getAmount()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Food> ApplicationConversionServiceFactoryBean.getIdToFoodConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, system.engineer.hotel.domain.Food>() {
+            public system.engineer.hotel.domain.Food convert(java.lang.Long id) {
+                return Food.findFood(id);
+            }
+        };
+    }
+    
+    public Converter<String, Food> ApplicationConversionServiceFactoryBean.getStringToFoodConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, system.engineer.hotel.domain.Food>() {
+            public system.engineer.hotel.domain.Food convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Food.class);
+            }
+        };
+    }
+    
+    public Converter<Kitchenstaff, String> ApplicationConversionServiceFactoryBean.getKitchenstaffToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<system.engineer.hotel.domain.Kitchenstaff, java.lang.String>() {
+            public String convert(Kitchenstaff kitchenstaff) {
+                return new StringBuilder().append(kitchenstaff.getKitchenstaffname()).append(' ').append(kitchenstaff.getKitchenstaffid()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Kitchenstaff> ApplicationConversionServiceFactoryBean.getIdToKitchenstaffConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, system.engineer.hotel.domain.Kitchenstaff>() {
+            public system.engineer.hotel.domain.Kitchenstaff convert(java.lang.Long id) {
+                return Kitchenstaff.findKitchenstaff(id);
+            }
+        };
+    }
+    
+    public Converter<String, Kitchenstaff> ApplicationConversionServiceFactoryBean.getStringToKitchenstaffConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, system.engineer.hotel.domain.Kitchenstaff>() {
+            public system.engineer.hotel.domain.Kitchenstaff convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Kitchenstaff.class);
+            }
+        };
+    }
+    
+    public Converter<Refillfood, String> ApplicationConversionServiceFactoryBean.getRefillfoodToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<system.engineer.hotel.domain.Refillfood, java.lang.String>() {
+            public String convert(Refillfood refillfood) {
+                return new StringBuilder().append(refillfood.getRefillnumber()).append(' ').append(refillfood.getRefilldate()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Refillfood> ApplicationConversionServiceFactoryBean.getIdToRefillfoodConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, system.engineer.hotel.domain.Refillfood>() {
+            public system.engineer.hotel.domain.Refillfood convert(java.lang.Long id) {
+                return Refillfood.findRefillfood(id);
+            }
+        };
+    }
+    
+    public Converter<String, Refillfood> ApplicationConversionServiceFactoryBean.getStringToRefillfoodConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, system.engineer.hotel.domain.Refillfood>() {
+            public system.engineer.hotel.domain.Refillfood convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Refillfood.class);
+            }
+        };
+    }
+    
     public Converter<Room, String> ApplicationConversionServiceFactoryBean.getRoomToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<system.engineer.hotel.domain.Room, java.lang.String>() {
             public String convert(Room room) {
@@ -122,6 +197,15 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getCustomerToStringConverter());
         registry.addConverter(getIdToCustomerConverter());
         registry.addConverter(getStringToCustomerConverter());
+        registry.addConverter(getFoodToStringConverter());
+        registry.addConverter(getIdToFoodConverter());
+        registry.addConverter(getStringToFoodConverter());
+        registry.addConverter(getKitchenstaffToStringConverter());
+        registry.addConverter(getIdToKitchenstaffConverter());
+        registry.addConverter(getStringToKitchenstaffConverter());
+        registry.addConverter(getRefillfoodToStringConverter());
+        registry.addConverter(getIdToRefillfoodConverter());
+        registry.addConverter(getStringToRefillfoodConverter());
         registry.addConverter(getRoomToStringConverter());
         registry.addConverter(getIdToRoomConverter());
         registry.addConverter(getStringToRoomConverter());

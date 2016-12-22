@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_system_engineer_hotel_domain_Refillfood" modelAttribute="refillfood" path="/refillfoods" render="${empty dependencies}" z="Hmkgfo8gfjHM2Oeri37vGRLyhYM=">
+        <field:select field="food" id="c_system_engineer_hotel_domain_Refillfood_food" itemValue="id" items="${foods}" path="/foods" z="o4JgTpO25cUUeMny/E5B/NgNaJY="/>
+        <field:input field="refillnumber" id="c_system_engineer_hotel_domain_Refillfood_refillnumber" min="2" required="true" z="59Q7F1MfeEkj2g6/sRVP/iIwXuY="/>
+        <field:datetime dateTimePattern="${refillfood_refilldate_date_format}" field="refilldate" id="c_system_engineer_hotel_domain_Refillfood_refilldate" z="10OwqSYb6lGut5/Gbcoqwgf2erU="/>
+        <field:select field="kitchenstaffname" id="c_system_engineer_hotel_domain_Refillfood_kitchenstaffname" itemValue="id" items="${kitchenstaffs}" path="/kitchenstaffs" z="BjHqf4Xm4/me+O6U4mKeTG6P8jU="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_system_engineer_hotel_domain_Refillfood" render="${not empty dependencies}" z="JTucVmIwwau6+ZQiNwqwpfV9nXg="/>
+</div>
